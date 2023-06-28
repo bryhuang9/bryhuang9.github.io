@@ -149,6 +149,11 @@ $(document).ready(function() {
             dataType: 'json',
             success: function() {
                 $('#form-message').show();
+
+                // Hide the message after 5 seconds
+                setTimeout(function() {
+                    $('#form-message').hide();
+                }, 5000);  // 5000 milliseconds = 5 seconds
             },
             error: function() {
                 alert('Oops! There was a problem with your submission. Please try again. Make sure all boxes are filled out');
