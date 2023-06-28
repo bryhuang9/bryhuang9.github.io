@@ -1,4 +1,4 @@
-# Brian Hunag's Portfolio Website
+# Brian Huang's Portfolio Website
 
 This repository contains the code for my personal portfolio website. The site showcases my work, skills, and professional experience in the field of software development.
 
