@@ -18,7 +18,7 @@ This repository contains the code for my personal portfolio website. The site sh
 
 ## Deployment
 
-The website is hosted using GitHub Pages. You can access it at `https://github.com/bryhuang9/bryhuang9.github.io`.
+The website is hosted using GitHub Pages. You can access it at `brianhuang.dev`.
 
 ## Contributing
 
@@ -32,5 +32,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Brian Huang - brian.yao.huang@gmail.com
 
-Project Link: [https://github.com/bryhuang9/bryhuang9.github.io](https://github.com/bryhuang9/bryhuang9.github.io)
+Project Link: [brianhuang.dev](https://github.com/bryhuang9/bryhuang9.github.io)
 
