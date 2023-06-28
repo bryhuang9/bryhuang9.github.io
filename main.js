@@ -121,7 +121,7 @@ backButtons.forEach((backButton, index) => {
 // Handling the case where user clicks outside the modal
 window.onclick = function(event) {
     modals.forEach((modal, index) => {
-        if (event.target === modal) {
+        if (!modal.contains(event.target)) {
             closeModals(index);
         }
     });
@@ -185,4 +185,8 @@ function toggleDescription(descId, boxId, plusMinusId) {
     }
 }
 
-
+modals.forEach((modal, index) => {
+    modal.onclick = function(event) {
+        event.stopPropagation();
+    }
+});

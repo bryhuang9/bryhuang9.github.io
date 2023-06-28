@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Huang's Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#main" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact Me</a>
+    </nav>
+
+    <!-- MAIN -->
+
+    <header id="main" style="background-image: url('main-bg.jpg');">
+        <div class="star-container">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </div>
+        <div class="content-wrapper">
+            <h1 id="main-heading"></h1>
+            <p id="sub-heading"></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/bryhuang9/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/bryhuang9" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/thieves___" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <a href="mailto:brian.yao.huang@gmail.com" class="contact-button">Get In Touch</a>
+            <a href="#about" class="explore-button" aria-label="Scroll down"><span></span></a>
+        </div>
+    </header>
+
+    <!-- ABOUT ME-->
+    <section id="about">
+        <div class="content-wrapper">
+            <h2>About Me</h2>
+            <div class="profile-picture">
+                <img src="pic.png" alt="Profile Picture">
+            </div>
+            <p>Hello there! My name is Brian Huang. I am currently entering my third year as a college student at the University of California, Davis, previously studying at the University of California, Santa Cruz,
+                majoring in Computer Science. I am looking to gain more experience and knowledge in a professional atmosphere. My dream is to one day work at a big tech company as a Software Engineer.
+            </p>
+            <div class="personal-details">
+                <div class="detail">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div><strong>Location: </strong> San Francisco, CA</div>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-flag"></i>
+                    <div><strong>Nationality: </strong> Asian American</div>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div><strong>Education: </strong> University of California, Davis & University of California, Santa Cruz</div>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-birthday-cake"></i>
+                    <div><strong>Age: </strong> 20</div>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-heart"></i>
+                    <div><strong>Interests: </strong> Coding, Gaming, Snowboarding, Hanging with Friends, Going on Adventures</div>
+                </div>
+            </div>
+            <a href="Resumee.pdf" target="_blank">
+                <button id="resume-button" class="contact-button resume-button">Resume</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+        <div class="content-wrapper">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <a href="#" class="project-box" id="project1-button">
+                        <div class="project-title"><strong>Student Report Card App</strong></div>
+                        <div class="project-description">A terminal app to perform report card related functions for teachers.</div>
+                        <div class="project-language">C++</div>
+                    </a>
+                    <div id="project1-modal" class="modal1">
+                        <div class="modal-content1">
+                            <span class="close-project1"><i class="fas fa-arrow-circle-left"></i></span>
+                            <button class="back-button1">Back to Projects</button>
+                            <hr class="modal-divider">
+                            <h3>Student Report Card App</h3>
+                            <p>A terminal app to perform report card related functions for teachers.</p>
+                            <div class="project-gif-container">
+                                <img src="student_report.gif" alt="gif for project 1">
+                            </div>
+                            <h3>About</h3>
+                            <p>The Student Report Card App is a console-based application designed to streamline the process of generating student report cards. Developed using the C++ programming language, 
+                                this system is user-friendly and can be easily modified to suit specific needs. The primary purpose of this system is to facilitate the distribution of grade records to each student, making it 
+                                easier for teachers to compute the General Average for student grades. It is particularly beneficial for students taking computer-related courses, as it provides new techniques in C++ programming.
+                            </p>
+                            <h3>Languages</h3>
+                            <div class="project-language1">C++</div>
+                            ...
+                            <h3><i class="fab fa-github"></i> Github</h3>
+                            <a href="https://github.com/" target="_blank">Link to github (coming soon)</a>
+                            ...
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <a href="#" class="project-box" id="project2-button">
+                        <div class="project-title"><strong>Supermarket Billing App</strong></div>
+                        <div class="project-description">Order anything supermarket related and have it calculate your total.</div>
+                        <div class="project-language">C++</div>
+                    </a>
+                    <div id="project2-modal" class="modal1">
+                        <div class="modal-content1">
+                            <span class="close-project2"><i class="fas fa-arrow-circle-left"></i></span>
+                            <button class="back-button2">Back to Projects</button>
+                            <hr class="modal-divider">
+                            <h3>Supermarket Billing App</h3>
+                            <p>Order anything supermarket related and have it calculate your total.</p>
+                            <div class="project-gif-container">
+                                <img src="supermarket.gif" alt="gif for project 2">
+                            </div>
+                            <h3>About</h3>
+                            <p>The Supermarket Billing App is a console-basesd application designed to manage billing operations in a supermarket. This system is 
+                                developed using the C++ programming language and does not involve the use of graphics. The primary purpose of this system is to generate bill 
+                                reports, add items, and update their details. It serves as a practical tool for understanding the use of the stream class and file handling in C++ programming.
+                            </p>
+                            <h3>Languages</h3>
+                            <div class="project-language1">C++</div>
+                            ...
+                            <h3><i class="fab fa-github"></i> Github</h3>
+                            <a href="https://github.com/" target="_blank">Link to github (coming soon)</a>
+                            ...
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <a href="#" class="project-box" id="project3-button">
+                        <div class="project-title"><strong>Doctor's Appointment System</strong></div>
+                        <div class="project-description">A terminal app to make your doctor appointments.</div>
+                        <div class="project-language">C++</div>
+                    </a>
+                    <div id="project3-modal" class="modal1">
+                        <div class="modal-content1">
+                            <span class="close-project3"><i class="fas fa-arrow-circle-left"></i></span>
+                            <button class="back-button3">Back to Projects</button>
+                            <hr class="modal-divider">
+                            <h3>Doctor's Appointment System</h3>
+                            <p>A terminal app to make your doctor appointments.</p>
+                            <div class="project-gif-container">
+                                <img src="doctors.gif" alt="gif for project 3">
+                            </div>
+                            <h3>About</h3>
+                            <p>The Doctor's Appointment System is a console-based application designed to simulate the appointment system of any hospital. Developed using the C++ programming language, 
+                                this system is designed to maintain records even if the application is closed. The primary purpose of this system is to manage doctor appointments. It provides a list of 
+                                available slots to customers, allowing them to choose any slot that is not already booked. This system ensures that customers cannot book a slot that has already been reserved, thereby preventing double bookings and ensuring efficient management of doctor's schedules.
+                            </p>
+                            <h3>Languages</h3>
+                            <div class="project-language1">C++</div>
+                            ...
+                            <h3><i class="fab fa-github"></i> Github</h3>
+                            <a href="https://github.com/" target="_blank">Link to github (coming soon)</a>
+                            ...
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <a href="#" class="project-box" id="project4-button">
+                        <div class="project-title">Portfolio Website</div>
+                        <div class="project-description">My own portfolio website containing all my work and information.</div>
+                        <div class="project-language hcss">HTML & CSS</div>
+                        <div class="project-language js">JavaScript</div>
+                    </a>
+                    <div id="project4-modal" class="modal1">
+                        <div class="modal-content1">
+                            <span class="close-project4"><i class="fas fa-arrow-circle-left"></i></span>
+                            <button class="back-button4">Back to Projects</button>
+                            <hr class="modal-divider">
+                            <h3>Portfolio Website</h3>
+                            <p>My own portfolio website containing all my work and information.</p>
+                            <div class="project-gif-container">
+                                <img src="portfolio.gif" alt="gif for project 4">
+                            </div>
+                            <h3>About</h3>
+                            <p>
+                                The Portfolio Website is my personal website developed to showcase my experiences and projects. It serves as a digital resume, 
+                                providing a comprehensive view of my capabilities and achievements.
+                            </p>
+                            <h3>Languages</h3>
+                            <div class="project-language1">HTML & CSS</div>
+                            <div class="project-language2">JavaScript</div>
+                            ...
+                            <h3><i class="fab fa-github"></i> Github</h3>
+                            <a href="https://github.com/" target="_blank">Link to github (coming soon)</a>
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience">
+        <div class="content-wrapper">
+            <h2>Experience</h2>
+            <!-- Box 1 -->
+            <div class="box" id="box1" onclick="toggleDescription('desc1', 'box1', 'plusMinus1')">
+                <div class="title">
+                    <h6 class="flex-container">
+                        <span class="position">Student @ University of California, Santa Cruz</span>
+                        <div class="time-plus">
+                            <span class="time">Sep 2021 - Jun 2023</span>
+                            <div class="plus-minus" id="plusMinus1">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                            </div>
+                        </div>
+                    </h6>
+                </div>
+            </div>
+            <div class="description" id="desc1">
+                <div class="location-container">
+                    <div class="location-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Santa Cruz, California</span>
+                        <a class="website-link" href="https://www.ucsc.edu/" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span class="website-text">ucsc.edu</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="description-content">
+                    <div class="description-text">
+                        <p>Majored in Computer Science: Game Design. Maintained a GPA of 3.92 and was on the Dean's Honor
+                            List for the two years I was there.
+                        </p>
+                    </div>
+                    <div class="image-container">
+                        <img src="slug.png" alt="Description Image 1">
+                    </div>
+                </div>
+            </div>
+            <!-- Box 2 -->
+            <div class="box" id="box2" onclick="toggleDescription('desc2', 'box2', 'plusMinus2')">
+                <div class="title">
+                    <h6 class="flex-container">
+                        <span class="position">Student @ University of California, Davis</span>
+                        <div class="time-plus">
+                            <span class="time">Sep 2023 - Present</span>
+                            <div class="plus-minus" id="plusMinus2">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                            </div>
+                        </div>
+                    </h6>
+                </div>
+            </div>
+            <div class="description" id="desc2">
+                <div class="location-container">
+                    <div class="location-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Davis, California</span>
+                        <a class="website-link" href="https://www.ucdavis.edu/" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span class="website-text">ucdavis.edu</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="description-content">
+                    <div class="description-text">
+                        <p>Transferred to University of California, Davis from Santa Cruz to pursue my degree in Computer Science.
+                            I will be attending UCD starting Fall 2023 as a third year student.
+                        </p>
+                    </div>
+                    <div class="image-container">
+                        <img src="davis.png" alt="Description Image 2">
+                    </div>
+                </div>
+            </div>
+            <!-- Box 3 -->
+            <div class="box" id="box3" onclick="toggleDescription('desc3', 'box3', 'plusMinus3')">
+                <div class="title">
+                    <h6 class="flex-container">
+                        <span class="position">Memeber @ SlugCP</span>
+                        <div class="time-plus">
+                            <span class="time">Jan 2022 - May 2023</span>
+                            <div class="plus-minus" id="plusMinus3">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                            </div>
+                        </div>
+                    </h6>
+                </div>
+            </div>
+            <div class="description" id="desc3">
+                <div class="location-container">
+                    <div class="location-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Santa Cruz, California</span>
+                    </div>
+                </div>
+                <div class="description-content">
+                    <div class="description-text">
+                        <p>Competitive coding club at UCSC that hosted daily meetings and general meetings to practice coding. 
+                            I collaborated with peers to tackle leetcode type problems as well as participate in mock interviews.
+                        </p>
+                    </div>
+                    <div class="image-container">
+                        <img src="slug.png" alt="Description Image 3">
+                    </div>
+                </div>
+            </div>
+            <!-- Box 4-->        
+            <div class="box" id="box4" onclick="toggleDescription('desc4', 'box4', 'plusMinus4')">
+                <div class="title">
+                    <h6 class="flex-container">
+                        <span class="position">Intern @ Mayor's Youth Education Employment Program</span>
+                        <div class="time-plus">
+                            <span class="time">June 2018 - May 2019</span>
+                            <div class="plus-minus" id="plusMinus4">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                            </div>
+                        </div>
+                    </h6>
+                </div>
+            </div>
+            <div class="description" id="desc4">
+                <div class="location-container">
+                    <div class="location-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>San Francisco, California</span>
+                        <a class="website-link" href="https://www.jcycworkhub.org/programs/myeep" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span class="website-text">jcycworkhub.org</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="description-content">
+                    <div class="description-text">
+                        <p>MYEEP provides San Francisco youth with paid work opportunities, academic support, and tools they’ll 
+                            need to succeed in the workplace.  MYEEP also gives youth a chance to build relationships with other 
+                            members of their neighborhood communities. I worked in an office environment, middle school, and preschool.</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="myeep.png" alt="Description Image 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CONTACT ME -->
+    
+    <section id="contact">
+        <div class="content-wrapper content-content-wrapper">
+            <h2>Contact Me</h2>
+            <div class="social-icons1">
+                <a href="https://www.linkedin.com/in/bryhuang9/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/bryhuang9" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/thieves___" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="contact-form-box">
+                <form id="contactForm" method="post">
+                    <div class="form-field">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div id="form-message" style="display: none;">Your message has been sent!</div>
+                </form>
+            </div>            
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2023 Brian Huang. All rights reserved.</p>
+    </div>
+</footer>
+</html>
