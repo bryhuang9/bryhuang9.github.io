@@ -44,7 +44,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 let mainText = 'Brian Huang';
-let subText = 'Computer Science Student';
+let subText = 'Aspiring Software Engineer';
 let i = 0, j = 0;
 
 function typeWriter() {
