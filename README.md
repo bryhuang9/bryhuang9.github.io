@@ -49,13 +49,10 @@
 <div align="center">
 
 ### 🏠 Hero Section
-![Hero Section](https://via.placeholder.com/800x400/6366f1/ffffff?text=Hero+Section)
+![Hero Section](./hero.png)
 
 ### 💼 Projects Showcase  
-![Projects](https://via.placeholder.com/800x400/8b5cf6/ffffff?text=Projects+Section)
-
-### 📱 Fully Responsive
-![Responsive](https://via.placeholder.com/800x400/ec4899/ffffff?text=Mobile+Responsive)
+![Projects](./project.png)
 
 </div>
 
