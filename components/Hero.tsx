@@ -1,12 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter, Mail, ChevronDown, Sparkles, Code2, Rocket } from 'lucide-react';
+import { Github, Linkedin, Mail, Sparkles, Code2, Rocket } from 'lucide-react';
 
 const socialLinks = [
   { icon: Linkedin, href: 'https://www.linkedin.com/in/bryhuang9/', label: 'LinkedIn', color: 'hover:bg-blue-600' },
   { icon: Github, href: 'https://github.com/bryhuang9', label: 'GitHub', color: 'hover:bg-gray-800' },
-  { icon: Twitter, href: 'https://twitter.com/thieves___', label: 'Twitter', color: 'hover:bg-sky-500' },
   { icon: Mail, href: 'mailto:brian.yao.huang@gmail.com', label: 'Email', color: 'hover:bg-pink-600' },
 ];
 
@@ -186,16 +185,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.a
-        href="#about"
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 hover:text-white transition-colors z-20"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
-        <span className="text-sm font-medium">Scroll to explore</span>
-        <ChevronDown className="w-6 h-6" />
-      </motion.a>
     </section>
   );
 }
