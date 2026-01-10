@@ -140,7 +140,7 @@ bryhuang9.github.io/
 │
 ├── 📂 public/                  # Static Assets
 │   ├── pic.png                 # Profile picture
-│   ├── Resume - cs.pdf         # Resume document
+│   ├── Resume - Brian Huang.pdf         # Resume document
 │   ├── banking-app.png         # Project screenshots
 │   ├── realestate.png
 │   └── ...                     # Other images & icons

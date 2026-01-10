@@ -149,7 +149,7 @@ export default function Hero() {
             </motion.a>
             
             <motion.a
-              href="/Resume - cs.pdf"
+              href="/Resume - Brian Huang.pdf"
               target="_blank"
               className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-xl font-semibold hover:bg-white/20 transition-all"
               whileHover={{ scale: 1.05 }}
@@ -189,7 +189,7 @@ export default function Hero() {
       {/* Scroll Indicator */}
       <motion.a
         href="#about"
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 hover:text-white transition-colors"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 hover:text-white transition-colors z-20"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >

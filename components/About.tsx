@@ -2,13 +2,11 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { MapPin, Flag, GraduationCap, Cake, Heart } from 'lucide-react';
+import { MapPin, GraduationCap, Heart } from 'lucide-react';
 
 const details = [
   { icon: MapPin, label: 'Location', value: 'San Francisco, CA' },
-  { icon: Flag, label: 'Nationality', value: 'Asian American' },
   { icon: GraduationCap, label: 'Education', value: 'University of California, Davis' },
-  { icon: Cake, label: 'Age', value: '22' },
   { icon: Heart, label: 'Interests', value: 'Coding, Gaming, Snowboarding, Adventures' },
 ];
 
@@ -91,7 +89,7 @@ export default function About() {
               </div>
 
               <motion.a
-                href="/Resume - cs.pdf"
+                href="/Resume - Brian Huang.pdf"
                 target="_blank"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white rounded-xl font-semibold hover:shadow-2xl transition-all glow-hover"
                 whileHover={{ scale: 1.05 }}
