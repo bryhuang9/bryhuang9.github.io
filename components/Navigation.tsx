@@ -103,9 +103,9 @@ export default function Navigation() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden absolute top-full left-0 right-0 mt-2 mx-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 overflow-hidden"
+            className="md:hidden absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[calc(100vw-2rem)] max-w-xs rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 overflow-hidden shadow-2xl"
           >
-            <div className="p-4 space-y-2">
+            <div className="p-4 space-y-2 max-h-[60vh] overflow-y-auto">
               {navItems.map((item) => (
                 <a
                   key={item.name}

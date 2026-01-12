@@ -46,6 +46,7 @@ html {
   background-size: 200% auto;
   animation: gradient-shift 3s ease infinite;
   padding-right: 4px;
+  padding-bottom: 8px;
   overflow: visible;
 }
 

@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Sparkles, Code2, Rocket } from 'lucide-react';
 
@@ -10,15 +11,39 @@ const socialLinks = [
 ];
 
 export default function Hero() {
+  const [particles, setParticles] = useState<Array<{
+    id: number;
+    width: number;
+    height: number;
+    left: number;
+    top: number;
+    duration: number;
+    delay: number;
+  }>>([]);
+
+  useEffect(() => {
+    // Generate particles only on client side to avoid hydration mismatch
+    const generatedParticles = Array.from({ length: 30 }, (_, i) => ({
+      id: i,
+      width: Math.random() * 3 + 1,
+      height: Math.random() * 3 + 1,
+      left: Math.random() * 100,
+      top: Math.random() * 100,
+      duration: Math.random() * 5 + 3,
+      delay: Math.random() * 3,
+    }));
+    setParticles(generatedParticles);
+  }, []);
+
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black w-full">
       {/* Animated mesh gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-950 via-black to-purple-950">
         <div className="absolute inset-0 mesh-gradient opacity-60"></div>
       </div>
 
       {/* Animated orbs */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden w-full">
         <motion.div
           className="absolute w-96 h-96 bg-indigo-500/30 rounded-full blur-3xl"
           style={{ top: '10%', left: '10%' }}
@@ -50,31 +75,31 @@ export default function Hero() {
 
       {/* Floating particles */}
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(30)].map((_, i) => (
+        {particles.map((particle) => (
           <motion.div
-            key={i}
+            key={particle.id}
             className="absolute bg-white rounded-full"
             style={{
-              width: Math.random() * 3 + 1,
-              height: Math.random() * 3 + 1,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              width: particle.width,
+              height: particle.height,
+              left: `${particle.left}%`,
+              top: `${particle.top}%`,
             }}
             animate={{
               y: [0, -100, 0],
               opacity: [0, 1, 0],
             }}
             transition={{
-              duration: Math.random() * 5 + 3,
+              duration: particle.duration,
               repeat: Infinity,
               ease: 'easeInOut',
-              delay: Math.random() * 3,
+              delay: particle.delay,
             }}
           />
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="text-center">
           {/* Badge */}
           <motion.div
@@ -92,10 +117,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="overflow-visible"
           >
-            <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold mb-12 tracking-tight px-8 overflow-visible pb-2">
-              <span className="gradient-text block inline-block px-2">Brian Huang</span>
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold mb-12 tracking-tight px-2 pb-4">
+              <span className="gradient-text inline-block pb-2">Brian Huang</span>
             </h1>
             
             <motion.div
@@ -117,7 +141,7 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.8 }}
             >
-              Aspiring Software Engineer graduated from <span className="text-indigo-400 font-semibold">UC Davis</span> crafting 
+              Software Engineer graduated from <span className="text-indigo-400 font-semibold">UC Davis</span> crafting 
               elegant solutions to complex problems. Passionate about building products that make a difference.
             </motion.p>
           </motion.div>
