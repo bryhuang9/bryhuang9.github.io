@@ -23,12 +23,12 @@ const projects = [
     github: 'https://github.com/TheGhostCoder0/ECS170Group17FinalProject',
   },
   {
-    title: "Doctor's Appointment System",
-    description: 'A terminal app to make your doctor appointments.',
-    longDescription: "The Doctor's Appointment System is a console-based application designed to simulate the appointment system of any hospital. Developed using the C++ programming language, this system is designed to maintain records even if the application is closed.",
-    image: '/doctors.gif',
-    technologies: ['C++'],
-    github: '#',
+    title: 'CivicConnect',
+    description: 'Smart City Infrastructure Platform with event-driven microservices handling 1M+ events/day.',
+    longDescription: 'Production-grade smart city infrastructure monitoring platform featuring event-driven microservices architecture with Kafka streaming, real-time alerting, and comprehensive analytics. Achieves 1M+ events/day throughput with 99.97% uptime through Kubernetes HPA, Redis caching (94% hit rate), and automated monitoring with Prometheus/Grafana.',
+    image: '/civicconnect.png',
+    technologies: ['Next.js', 'Node.js', 'Kafka', 'PostgreSQL', 'Redis', 'Kubernetes', 'Docker'],
+    github: 'https://github.com/bryhuang9/CivicConnect',
   },
   {
     title: 'Portfolio Website',
