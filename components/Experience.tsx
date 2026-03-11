@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 const experiences = [
   {
-    position: 'University of California, Davis Alumni',
+    position: 'Alumni @ University of California, Davis',
     duration: 'Sep 2023 - Dec 2025',
     location: 'Davis, California',
     website: 'https://www.ucdavis.edu/',
