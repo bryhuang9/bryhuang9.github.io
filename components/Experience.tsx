@@ -7,12 +7,12 @@ import { useState } from 'react';
 
 const experiences = [
   {
-    position: 'Student @ University of California, Davis',
-    duration: 'Sep 2021 - Dec 2025',
+    position: 'University of California, Davis Alumni',
+    duration: 'Sep 2023 - Dec 2025',
     location: 'Davis, California',
     website: 'https://www.ucdavis.edu/',
     websiteText: 'ucdavis.edu',
-    description: 'Graduated from the University of California, Davis with a Regents Scholarship and a degree in Computer Science.',
+    description: 'Transferred to University of California, Davis with a Regents Scholarship to pursue my degree in Computer Science. I will be attending UCD starting Fall 2023 as a third year student.',
     image: '/davis.png',
   },
   {
