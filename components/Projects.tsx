@@ -75,13 +75,13 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative rounded-2xl overflow-hidden"
+                className="group relative rounded-2xl overflow-hidden h-full"
                 whileHover={{ y: -10 }}
               >
                 {/* Gradient border effect */}
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-2xl blur opacity-0 group-hover:opacity-75 transition duration-500"></div>
                 
-                <div className="relative bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 group-hover:border-transparent transition-colors">
+                <div className="relative bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 group-hover:border-transparent transition-colors h-full flex flex-col">
                   {/* Project Image */}
                   <div className="relative h-64 overflow-hidden">
                     <img
@@ -93,7 +93,7 @@ export default function Projects() {
                   </div>
 
                   {/* Project Info */}
-                  <div className="p-6 space-y-4">
+                  <div className="p-6 space-y-4 flex-grow flex flex-col">
                     <h3 className="text-2xl font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-400 group-hover:to-pink-400 transition-all">
                       {project.title}
                     </h3>
@@ -114,7 +114,7 @@ export default function Projects() {
                     </div>
 
                     {/* Links */}
-                    <div className="flex gap-4 pt-2">
+                    <div className="flex gap-4 pt-2 mt-auto">
                       <motion.a
                         href={project.github}
                         target="_blank"

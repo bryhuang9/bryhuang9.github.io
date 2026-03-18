@@ -7,6 +7,15 @@ import { useState } from 'react';
 
 const experiences = [
   {
+    position: 'Extern, Hydroficient',
+    duration: 'Mar 2026 - Present',
+    location: 'Remote',
+    website: 'https://www.extern.com/externships/hydroficient-iot-cyber-defense-externship/',
+    websiteText: 'extern.com',
+    description: '- Built and secured an MQTT-based IoT pipeline using Python, TLS encryption, and device certificates to simulate and protect real-time water monitoring systems. \n-Conducted security testing, including replay attack simulations and TLS performance benchmarking, identifying vulnereabilities and tuning defenses. \n- Developed a real-time security dashboard using Streamlit to monitor pipeline health, detect threats, and track system status',
+    image: '/extern.png',
+  },
+  {
     position: 'Alumni @ University of California, Davis',
     duration: 'Sep 2023 - Dec 2025',
     location: 'Davis, California',
@@ -123,9 +132,11 @@ export default function Experience() {
 
                     <div className="flex flex-col md:flex-row gap-6">
                       <div className="flex-1">
-                        <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                          {exp.description}
-                        </p>
+                        <div className="text-gray-700 dark:text-gray-300 leading-relaxed space-y-2">
+                          {exp.description.split('\n').map((line, i) => (
+                            <p key={i}>{line}</p>
+                          ))}
+                        </div>
                       </div>
                       {exp.image && (
                         <div className="md:w-32 flex items-end justify-center md:justify-end">

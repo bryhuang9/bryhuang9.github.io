@@ -2,13 +2,12 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Github, Linkedin, Twitter, Send } from 'lucide-react';
+import { Github, Linkedin, Send } from 'lucide-react';
 import { useState } from 'react';
 
 const socialLinks = [
   { icon: Linkedin, href: 'https://www.linkedin.com/in/bryhuang9/', label: 'LinkedIn', color: 'hover:text-blue-600' },
   { icon: Github, href: 'https://github.com/bryhuang9', label: 'GitHub', color: 'hover:text-gray-900 dark:hover:text-white' },
-  { icon: Twitter, href: 'https://twitter.com/thieves___', label: 'Twitter', color: 'hover:text-blue-400' },
 ];
 
 export default function Contact() {

@@ -172,7 +172,7 @@ export default function Hero() {
             </motion.a>
             
             <motion.a
-              href="/Resume - Brian Huang.pdf"
+              href="/Resume 2 - Brian Huang.pdf"
               target="_blank"
               className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-xl font-semibold hover:bg-white/20 transition-all"
               whileHover={{ scale: 1.05 }}

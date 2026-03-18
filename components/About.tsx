@@ -89,7 +89,7 @@ export default function About() {
               </div>
 
               <motion.a
-                href="/Resume - Brian Huang.pdf"
+                href="/Resume 2 - Brian Huang.pdf"
                 target="_blank"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white rounded-xl font-semibold hover:shadow-2xl transition-all glow-hover"
                 whileHover={{ scale: 1.05 }}
